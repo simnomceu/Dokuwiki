@@ -1,0 +1,80 @@
+
+<h2 class="sectionedit1" id="creation_d_animaux">Création d&#039;animaux</h2>
+<div class="level2">
+
+<p>
+Les animaux sont des sous-wikis indépendants d&#039;une ferme de DokuWiki. Pour créer un nouvel animal, il faut lui assigner un nom.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Cr\u00e9ation d&#039;animaux&quot;,&quot;hid&quot;:&quot;creation_d_animaux&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-164&quot;} -->
+<h3 class="sectionedit2" id="les_noms_d_animaux">Les noms d&#039;animaux</h3>
+<div class="level3">
+
+<p>
+Pour les fermes basées sur la réécriture par fichier .htaccess
+cela devrait être un seul mot.
+Pour les configurations basées sur les noms de domaine vous devriez indiquer
+un nom de domaine totalement qualifié (FQDN).
+Pour les fermes à base de sous domaine générique<sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup>, alors un nom d&#039;hôte suffit, à condition
+d&#039;indiquer également un domaine de base.
+</p>
+
+<p>
+Exemples:
+</p>
+<ul>
+<li class="level1"><div class="li"> basé sur .htaccess : <code>toto</code> pour un animal accessible à <code>http://example.org/dokuwiki/!toto/</code></div>
+</li>
+<li class="level1"><div class="li"> basé sur le domaine : <code>www.toto.com</code> pour un animal accessible à <code>http://www.toto.com/</code></div>
+</li>
+<li class="level1"><div class="li"> basé sur le sous domaine : <code>toto</code> pour un animal accessible à <code>http://toto.example.com/</code></div>
+</li>
+</ul>
+
+<p>
+Les deux derniers nécessitent un réglage du <abbr title="Domain Name System">DNS</abbr> approprié !
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Les noms d&#039;animaux&quot;,&quot;hid&quot;:&quot;les_noms_d_animaux&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;165-989&quot;} -->
+<h3 class="sectionedit3" id="copie_d_animal">Copie d&#039;animal</h3>
+<div class="level3">
+
+<p>
+Vous pouvez sélectionner un animal existant comme base d&#039;un
+nouvel animal.  Toute la configuration, toutes les pages et fichiers
+médias, ainsi que les méta données seront copiés vers le nouvel
+animal. L&#039;historique des pages et médias ne sera pas copié.
+</p>
+
+<p>
+Le titre et l&#039;image de logo seront modifiés de manière à être certain
+que vous pourrez distinguer la nouvelle copie de l&#039;ancien.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Copie d&#039;animal&quot;,&quot;hid&quot;:&quot;copie_d_animal&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;990-1410&quot;} -->
+<h3 class="sectionedit4" id="administrateur_de_l_animal">Administrateur de l&#039;animal</h3>
+<div class="level3">
+
+<p>
+L&#039;animal sera un wiki complètement fonctionnel, avec sa propre base
+d&#039;utilisateurs.  Vous aurez besoin d&#039;au moins un administrateur pour le
+gérer. Vous pouvez copier l&#039;utilisateur courant, tous les utilisateurs
+du fermier, ou créer un tout nouvel utilisateur pour l&#039;animal.
+</p>
+
+<p>
+Vous pouvez choisir de ne pas créer d&#039;utilisateur. Vous ne devriez
+choisir cette possibilité que si l&#039;héritage d&#039;utilisateurs du fermier
+est activé dans l&#039;onglet de configuration, ou si vous avez copié un
+animal déjà muni d&#039;utilisateurs.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Administrateur de l&#039;animal&quot;,&quot;hid&quot;:&quot;administrateur_de_l_animal&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:4,&quot;range&quot;:&quot;1411-&quot;} --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content"><em>wildcard subdomain</em>
+en bon anglais</div></div>
+</div>

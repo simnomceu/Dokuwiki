@@ -1,0 +1,87 @@
+
+<h2 class="sectionedit1" id="a_propos_de_l_elevage">À propos de l&#039;élevage</h2>
+<div class="level2">
+
+<p>
+L&#039;élevage est une technique qui permet, à partir d&#039;une unique
+installation de DokuWiki, connue comme le «fermier», de propulser
+un nombre quelconque d&#039;autres wikis appelés les animaux. Vous installez les
+greffons et thèmes uniquement dans le fermier, et les rendez disponibles
+à votre guise dans des animaux. Il suffit de mettre à jour le wiki principal et
+tous les autres wikis, qui partagent la même base de code, sont également mis
+à jour.
+</p>
+
+<p>
+Après avoir complété cette étape de configuration, votre wiki actuel,
+celui que vous lisez en ce moment même, sera connu comme le «fermier».
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;\u00c0 propos de l&#039;\u00e9levage&quot;,&quot;hid&quot;:&quot;a_propos_de_l_elevage&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-641&quot;} -->
+<h2 class="sectionedit2" id="que_fait_cette_initialisation">Que fait cette initialisation ?</h2>
+<div class="level2">
+
+<p>
+Cet assistant de configuration fera trois choses :
+</p>
+<ol>
+<li class="level1"><div class="li"> Créer un fichier <code>inc/preload.php</code>,</div>
+</li>
+<li class="level1"><div class="li"> créer un fichier <code>conf/farm.ini</code></div>
+</li>
+<li class="level1"><div class="li"> facultativement, ajouter un fichier <code>.htaccess</code>.</div>
+</li>
+</ol>
+
+<p>
+<code>preload.php</code> est un fichier qui est chargé au tout début du chargement de DokuWiki.
+Là, le mécanisme de ferme est initialisé. Le greffon <em>farmer</em> détectera si la requête
+doit être adressée à un animal ou au fermier, et reconfigurera l&#039;ensemble de manière
+appropriée.
+</p>
+
+<p>
+<code>conf/farm.ini</code> contient les configurations de base du système de ferme. En particulier,
+ce fichier contient l&#039;emplacement où les données des animaux seront
+enregistrées.
+</p>
+
+<p>
+La modification du fichier <code>.htaccess</code> permet de rendre accessible les animaux via
+le mécanisme <code>!bang</code> (voir ci-dessous).
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Que fait cette initialisation ?&quot;,&quot;hid&quot;:&quot;que_fait_cette_initialisation&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;642-1470&quot;} -->
+<h2 class="sectionedit3" id="que_remplir">Que remplir ?</h2>
+<div class="level2">
+
+<p>
+Le <strong>Dossier des animaux</strong> est le dossier où un nouveau dossier est créé pour
+chaque nouvel animal. Ce dossier <strong>doit</strong> se trouver en dehors de l&#039;arborescence
+de votre DokuWiki actuel. Vous pouvez utiliser un dossier relatif, tel que
+<code>../animaux</code> ou un chemin absolu.
+</p>
+
+<p>
+Il est recommandé d&#039;activer l&#039;utilisation du fichier <code>.htaccess</code>. Cette fonctionnalité
+nécessite un serveur <a href="https://httpd.apache.org/" class="urlextern" title="https://httpd.apache.org/" rel="nofollow">Apache</a> avec le module
+mod_rewrite et la prise en charge des fichiers .htaccess.
+</p>
+
+<p>
+Lorsque vous activez le .htaccess, les animaux sont accessibles sous l&#039;<abbr title="Uniform Resource Locator">URL</abbr> du
+wiki fermier en utilisant le suffixe <em>!bang</em>. Par exemple, si votre fermier
+est accessible à l&#039;<abbr title="Uniform Resource Locator">URL</abbr>
+<code>http://www.example.com/dokuwiki/</code>, l&#039;animal toto sera accessible à
+l&#039;<abbr title="Uniform Resource Locator">URL</abbr> <code>http://www.example.com/dokuwiki/!toto</code>.
+</p>
+
+<p>
+Si vous n&#039;activez pas ce mécanisme, vous devrez configurer votre serveur web
+et votre <abbr title="Domain Name System">DNS</abbr> pour pouvoir accéder aux animaux.
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Que remplir ?&quot;,&quot;hid&quot;:&quot;que_remplir&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;1471-&quot;} -->
