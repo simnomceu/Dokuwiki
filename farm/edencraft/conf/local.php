@@ -4,5 +4,4 @@
  */
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
-
-$conf['title'] = 'wiki';
+$conf['title'] = 'EdenCraft';
