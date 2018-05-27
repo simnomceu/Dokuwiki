@@ -12,8 +12,6 @@ if(!defined('DOKU_FARMDIR')) define('DOKU_FARMDIR', DOKU_INC.'../farm');
 // include this after DOKU_FARMDIR if you want to use farms
 include(fullpath(dirname(__FILE__)).'/farm.php');
 
-//if (DOKU_FARM == false) nice_die('Access to the farmer denied'); }
-
 // you can overwrite the $config_cascade to your liking
 $config_cascade['plainauth.users'] = array(
 	'default' => DOKU_INC.'conf/users.auth.php'
