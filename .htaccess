@@ -2,6 +2,7 @@ Options +FollowSymLinks -Indexes -MultiViews
 
 RewriteEngine On
 
-RewriteRule ^$ /dokuwiki [QSA,L]
+RewriteRule ^$ /welcome [QSA]
+RewriteRule ^dokuwiki /welcome [QSA]
 RewriteCond ${REQUEST_URI} !^/?dokuwiki(.*)
 RewriteRule ^/?(.*)$ /farm/$1 [QSA,L]
