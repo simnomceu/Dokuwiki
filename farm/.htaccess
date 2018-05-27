@@ -1,0 +1,8 @@
+RewriteEngine On
+
+#RewriteCond %{REQUEST_URI} !^/?dokuwiki/
+RewriteRule ^/?([^/]+)/(.*) /dokuwiki/$2?animal=$1 [QSA]
+#RewriteCond %{REQUEST_URI} !^/?dokuwiki$
+RewriteRule ^/?([^/]+)$ /dokuwiki/?animal=$1 [QSA]
+
+Options +FollowSymLinks
