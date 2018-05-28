@@ -8,7 +8,7 @@
  * you automatically.
  */
 
-$conf['title'] = 'simnomce'u';
+$conf['title'] = 'simnomce\'u';
 $conf['basedir'] = '/simnomceu';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
