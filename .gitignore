@@ -17,3 +17,6 @@
 **/data/attic/**
 **/data/media_attic/**
 **/conf/users.auth.php
+
+dokuwiki/.gitignore
+farm/.gitignore
