@@ -1,2 +1,11 @@
 **/cache/**
 !**/cache/_dummy
+
+**/index/**
+!**/index/_dummy
+
+**/locks/**
+!**/locks/_dummy
+
+**/tmp/**
+!**/tmp/_dummy
