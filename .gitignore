@@ -9,3 +9,11 @@
 
 **/tmp/**
 !**/tmp/_dummy
+
+**/data/pages/**
+**/data/meta/**
+**/data/media/**
+**/data/media_meta/**
+**/data/attic/**
+**/data/media_attic/**
+**/conf/users.auth.php
