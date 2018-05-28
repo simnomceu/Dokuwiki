@@ -12,5 +12,6 @@ $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';
 $conf['userewrite'] = '1';
+$conf['cookiedir'] = /; // to keep the same authentification cookie for all the farm.
 
 // end auto-generated content
