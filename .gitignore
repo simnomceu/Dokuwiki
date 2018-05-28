@@ -16,7 +16,8 @@
 **/data/media_meta/**
 **/data/attic/**
 **/data/media_attic/**
-**/conf/users.auth.php
 
 dokuwiki/.gitignore
 farm/.gitignore
+
+**/conf/users.auth.php
