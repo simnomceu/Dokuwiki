@@ -10,3 +10,4 @@ $plugins['extension']         = 1;
 $plugins['config']            = 1;
 $plugins['usermanager']       = 1;
 $plugins['template:dokuwiki'] = 1; // not a plugin, but this should not be uninstalled either
+$plugins['blogtng']              = 0;
