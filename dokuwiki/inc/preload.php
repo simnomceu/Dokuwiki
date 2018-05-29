@@ -18,3 +18,7 @@ include(fullpath(dirname(__FILE__)).'/farm.php');
 $config_cascade['plainauth.users'] = array(
 	'default' => DOKU_INC.'conf/users.auth.php'
 );
+
+$config_cascade['acl'] = array(
+	'default' => DOKU_INC.'conf/acl.auth.php'
+);

@@ -17,5 +17,4 @@
 # create 4
 # upload 8
 # delete 16
-
-*               @ALL        8
+#*	@ALL	8
