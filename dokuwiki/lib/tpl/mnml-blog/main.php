@@ -218,6 +218,9 @@ if (tpl_getConf("mnmlblog_loaduserjs") && file_exists(DOKU_TPLINC."user/user.js"
             echo " class=\"tmpl_header_logo_txt\">".hsc($conf["title"])."</a>\n";
         }
 
+	$translation = plugin_load('helper', 'translation');
+	if ($translation) echo $translation->showTranslations();
+
         //show header navigation?
         if (tpl_getConf("mnmlblog_headernav")){
             echo "\n       <div id=\"tmpl_header_nav\">\n";

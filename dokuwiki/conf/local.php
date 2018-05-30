@@ -14,4 +14,13 @@ $conf['disableactions'] = 'register';
 $conf['userewrite'] = '1';
 $conf['cookiedir'] = /; // to keep the same authentification cookie for all the farm.
 
+$conf['plugin']['translation']['translations'] = 'en,fr';
+$conf['plugin']['translation']['dropdown'] = 1;
+$conf['plugin']['translation']['translateui'] = 1;
+$conf['plugin'][translation']['redirectstart'] = 1;
+$conf['plugin']['translation']['checkage'] = 1;
+$conf['plugin']['translation']['about'] = 'translation:about';
+$conf['plugin']['translation']['localabout'] = 1;
+$conf['plugin']['translation']['display'] = 'langcode,name';
+
 // end auto-generated content

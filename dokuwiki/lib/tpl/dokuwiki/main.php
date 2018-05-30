@@ -29,7 +29,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
     <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
         echo ($showSidebar) ? 'showSidebar' : ''; ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
 
-        <?php include('tpl_header.php') ?>
+	<?php include('tpl_header.php') ?>
 
         <div class="wrapper group">
 
