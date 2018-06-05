@@ -8,6 +8,7 @@
 
 $conf['title'] = 'EnhancedPremake';
 $conf['basedir'] = '/enhancedpremake';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

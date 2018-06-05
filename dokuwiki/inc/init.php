@@ -108,8 +108,8 @@ if(!defined('DOKU_LF')) define ('DOKU_LF',"\n");
 if(!defined('DOKU_TAB')) define ('DOKU_TAB',"\t");
 
 // define cookie and session id, append server port when securecookie is configured FS#1664
-if (!defined('DOKU_COOKIE')) define('DOKU_COOKIE', 'DW'.md5(DOKU_REL.(($conf['securecookie'])?$_SERVER['SERVER_PORT']:'')));
-
+//if (!defined('DOKU_COOKIE')) define('DOKU_COOKIE', 'DW'.md5(DOKU_REL.(($conf['securecookie'])?$_SERVER['SERVER_PORT']:'')));
+if (!defined('DOKU_COOKIE')) define('DOKU_COOKIE', 'DW'.md5('commoncookie'.(($conf['securecookie'])?$_SERVER['SERVER_PORT']:'')));
 
 // define main script
 if(!defined('DOKU_SCRIPT')) define('DOKU_SCRIPT','doku.php');

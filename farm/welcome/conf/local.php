@@ -8,6 +8,7 @@
 
 $conf['title'] = 'Welcome';
 $conf['basedir'] = '/welcome';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

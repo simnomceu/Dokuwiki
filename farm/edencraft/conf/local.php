@@ -8,6 +8,7 @@
 
 $conf['title'] = 'Edencraft';
 $conf['basedir'] = '/edencraft';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

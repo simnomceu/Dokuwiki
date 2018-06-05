@@ -9,6 +9,7 @@
 $conf['title'] = 'Blog';
 $conf['template'] = 'mnml-blog';
 $conf['basedir'] = '/blog';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

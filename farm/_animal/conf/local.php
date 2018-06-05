@@ -10,6 +10,7 @@
 
 $conf['title'] = 'Animal Wiki Title';
 $conf['basedir'] = '_animal';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

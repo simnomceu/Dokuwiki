@@ -8,6 +8,7 @@
 
 $conf['title'] = 'simxu';
 $conf['basedir'] = '/simxu';
+$conf['cookiedir'] = '/';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';

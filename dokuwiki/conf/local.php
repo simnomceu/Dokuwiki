@@ -11,8 +11,9 @@ $conf['license'] = 'cc-by-sa';
 $conf['useacl'] = 1;
 $conf['superuser'] = '@admin';
 $conf['disableactions'] = 'register';
-$conf['userewrite'] = '1';
-$conf['cookiedir'] = /; // to keep the same authentification cookie for all the farm.
+$conf['userewrite'] = 1;
+$conf['cookiedir'] = '/'; // to keep the same authentification cookie for all the farm.
+$conf['auth_security_timeout'] = 3600;
 
 $conf['plugin']['translation']['translations'] = 'en,fr';
 $conf['plugin']['translation']['dropdown'] = 1;
